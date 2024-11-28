@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <br><br><br><br><br>
+    <h1 style="color: white;">Contact Management System</h1><br><br><br>
+    <form method="post" action="http://localhost:5000/new-contact" id="contactForm">
+        <input name="name" type="text" id="name" placeholder="Name" required>
+        <input name="phone" type="text" id="phone" placeholder="Phone" required>
+        <input name="email" type="email" id="email" placeholder="Email" required>
+        <button type="submit">Add Contact</button>
+    </form>
+    <br><br><br><br><br>
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <th>Abhaydeep Singh</th>
+                <th>6393922343</th>
+                <th>abhaydeepsingh@gmail.com</th>
+                <th style="color: green;">Active</th>
+            </tr>
+            <tr>
+                <th>Sanjay Mehra</th>
+                <th>6325623476</th>
+                <th>sanjymhr@gmail.com</th>
+                <th style="color: green;">Active</th>
+            </tr>
+            <tr>
+                <th>Kartik Srivatava</th>
+                <th>8181965325</th>
+                <th>imkartik@gmail.com</th>
+                <th style="color: red;">Deactive</th>
+            </tr>
+            <tr>
+                <th>Yashasvi Mishra</th>
+                <th>9865214562</th>
+                <th>yashvi435@gmail.com</th>
+                <th style="color: green;">Active</th>
+            </tr><tr>
+                <th>Divyanshu Patel</th>
+                <th>8654219875</th>
+                <th>divyansh8709@gmail.com</th>
+                <th style="color: green;">Active</th>
+            </tr>
+        </thead>
+        <tbody id="contactList"></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
